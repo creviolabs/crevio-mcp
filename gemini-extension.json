@@ -1,0 +1,10 @@
+{
+  "name": "crevio",
+  "version": "1.0.0",
+  "description": "Delegate work to an AI agent that runs your small business, or run scripts against the Crevio API and 3,000+ connected apps.",
+  "mcpServers": {
+    "crevio": {
+      "httpUrl": "https://mcp.crevio.co/mcp"
+    }
+  }
+}
