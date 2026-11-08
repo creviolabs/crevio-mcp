@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # The Crevio API serves its skill unchanged from app/views/api/v1/root/skill.md, so this is the deployed copy.
+      # The Crevio API serves this skill unchanged from its source in the Crevio monorepo.
       - run: curl --fail --silent --show-error https://api.crevio.co/skill.md --output skills/crevio-api/SKILL.md
 
       - uses: peter-evans/create-pull-request@v7

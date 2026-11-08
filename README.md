@@ -100,6 +100,7 @@ Then ask your agent to call `whoami`. If it answers with your account, you're co
 | `run_script` | Run JavaScript against the Crevio API and your integrations |
 | `wait_for_script_run`, `get_script_run`, `cancel_script_run` | Follow and stop script runs |
 | `get_file_download_url` | Download files a run or script produced |
+| `search_docs`, `read_docs_page` | Search and read Crevio's help center and developer guides |
 | `list_audit_events` | Read the account's audit log |
 | `whoami` | Check the account, plan, credits and limits behind the connection |
 
