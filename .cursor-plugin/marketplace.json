@@ -1,0 +1,13 @@
+{
+  "name": "crevio",
+  "owner": {
+    "name": "Crevio"
+  },
+  "plugins": [
+    {
+      "name": "crevio",
+      "source": "./",
+      "description": "Delegate work to an AI agent that runs your small business (products, orders, customers, email, sites), or run scripts against the Crevio API and 3,000+ connected apps."
+    }
+  ]
+}

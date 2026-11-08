@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "crevio",
+  "version": "1.0.0",
+  "description": "Delegate work to an AI agent that runs your small business (products, orders, customers, email, sites), or run scripts against the Crevio API and 3,000+ connected apps.",
+  "author": {
+    "name": "Crevio",
+    "email": "hello@crevio.co",
+    "url": "https://crevio.co"
+  },
+  "homepage": "https://crevio.co/docs/developer/mcp",
+  "repository": "https://github.com/creviolabs/crevio-mcp",
+  "license": "MIT",
+  "keywords": [
+    "small-business",
+    "ecommerce",
+    "agents",
+    "automation",
+    "crm",
+    "marketing",
+    "mcp"
+  ]
+}

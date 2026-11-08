@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/logo.png" width="96" alt="Crevio"></p>
+<p align="center"><img src="icon.png" width="96" alt="Crevio"></p>
 
 # Crevio MCP Server
 
@@ -23,11 +23,27 @@ You need a Crevio account. [Sign up free](https://crevio.co/users/signup), no ca
 
 Most clients sign you in with OAuth the first time a tool is used; you only need the URL.
 
-**Claude Code**
+**Claude Code**: install the plugin from this repository's marketplace
+
+```
+/plugin marketplace add creviolabs/crevio-mcp
+/plugin install crevio@crevio
+```
+
+or add the server directly:
 
 ```bash
 claude mcp add --transport http crevio https://mcp.crevio.co/mcp
 ```
+
+**Codex**
+
+```bash
+codex plugin marketplace add creviolabs/crevio-mcp
+codex plugin add crevio@crevio
+```
+
+Start a new Codex session after installing.
 
 **Claude.ai and Claude Desktop**: Settings → Connectors → Add custom connector → `https://mcp.crevio.co/mcp`.
 

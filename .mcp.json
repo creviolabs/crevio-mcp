@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "crevio": {
+      "type": "http",
+      "url": "https://mcp.crevio.co/mcp"
+    }
+  }
+}

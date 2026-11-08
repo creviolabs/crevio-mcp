@@ -1,0 +1,25 @@
+{
+  "name": "crevio",
+  "description": "Delegate work to an AI agent that runs your small business (products, orders, customers, email, sites), or run scripts against the Crevio API and 3,000+ connected apps.",
+  "version": "1.0.0",
+  "icon": "./icon.png",
+  "mcpServers": "./.mcp.json",
+  "author": {
+    "name": "Crevio",
+    "email": "hello@crevio.co",
+    "url": "https://crevio.co"
+  },
+  "privacyPolicyUrl": "https://crevio.co/legal/privacy-policy",
+  "homepage": "https://crevio.co/docs/developer/mcp",
+  "repository": "https://github.com/creviolabs/crevio-mcp",
+  "license": "MIT",
+  "keywords": [
+    "small-business",
+    "ecommerce",
+    "agents",
+    "automation",
+    "crm",
+    "marketing",
+    "mcp"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "crevio",
+  "interface": {
+    "displayName": "Crevio"
+  },
+  "plugins": [
+    {
+      "name": "crevio",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/creviolabs/crevio-mcp.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

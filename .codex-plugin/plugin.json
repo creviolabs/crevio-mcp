@@ -1,0 +1,47 @@
+{
+  "name": "crevio",
+  "version": "1.0.0",
+  "description": "Delegate work to an AI agent that runs your small business (products, orders, customers, email, sites), or run scripts against the Crevio API and 3,000+ connected apps.",
+  "author": {
+    "name": "Crevio",
+    "email": "hello@crevio.co",
+    "url": "https://crevio.co"
+  },
+  "homepage": "https://crevio.co/docs/developer/mcp",
+  "repository": "https://github.com/creviolabs/crevio-mcp",
+  "license": "MIT",
+  "keywords": [
+    "small-business",
+    "ecommerce",
+    "agents",
+    "automation",
+    "crm",
+    "marketing",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Crevio",
+    "shortDescription": "Run your small business",
+    "longDescription": "Connect your Crevio account to hand the Crevio agent jobs in plain language, such as summarizing this week's sales, drafting a launch email or researching competitors, and follow, continue and approve them. Or run scripts against the whole Crevio API and the apps connected to your account for exact numbers and bulk changes.",
+    "developerName": "Crevio",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://crevio.co",
+    "privacyPolicyURL": "https://crevio.co/legal/privacy-policy",
+    "termsOfServiceURL": "https://crevio.co/legal/terms-of-service",
+    "defaultPrompt": [
+      "Summarize my Crevio sales from the last 7 days.",
+      "Draft a launch email for my newest product and wait for my approval.",
+      "Did any of my scheduled Crevio tasks fail this week?"
+    ],
+    "brandColor": "#000000",
+    "composerIcon": "./icon.png",
+    "logo": "./icon.png",
+    "screenshots": []
+  }
+}

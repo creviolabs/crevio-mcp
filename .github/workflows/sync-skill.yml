@@ -1,0 +1,26 @@
+name: Sync crevio-api skill
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The Crevio API serves its skill unchanged from app/views/api/v1/root/skill.md, so this is the deployed copy.
+      - run: curl --fail --silent --show-error https://api.crevio.co/skill.md --output skills/crevio-api/SKILL.md
+
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: sync/crevio-api-skill
+          commit-message: "chore: sync crevio-api skill from api.crevio.co"
+          title: "chore: sync crevio-api skill from api.crevio.co"
+          body: "Copied from https://api.crevio.co/skill.md, which the Crevio API serves from its source in the Crevio monorepo. Edit the skill there, not here."
