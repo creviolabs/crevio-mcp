@@ -31,7 +31,7 @@ On the MCP server, use a script for exact numbers, lookups and bulk changes (sec
 
 - **Bodies are flat.** Send `{"name": "My Course"}`, not `{"product": {...}}`. In a script, a write's fields go under `body`, with path parameters beside it.
 - **Money** is an integer in the smallest currency unit: `4900` is $49.00.
-- **Ids** carry a type prefix (`prod_`, `price_`, `cus_`, `ord_`), and references use the bare name: `product: "prod_abc"`, not `product_id`.
+- **Ids** carry a type prefix (`prod_`, `price_`, `con_`, `ord_`), and references use the bare name: `product: "prod_abc"`, not `product_id`.
 - **Lists** return `{ object: "list", data, has_more }`, at most 100 a page. Pass the last item's id as `starting_after` until `has_more` is false when the answer must be complete.
 - **Operations** are named by their OpenAPI `operationId`: `tools.crevioApi.<operationId>` in a script, the matching SDK method, the operation of that name in the spec.
 
