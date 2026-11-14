@@ -1,11 +1,11 @@
 ---
 name: crevio-api
-description: "Work with a Crevio business: products, checkouts, orders, customers, email, sites, socials, ads and the rest of the API, through the Crevio MCP server (delegate to the Crevio agent or run scripts), the @crevio/sdk TypeScript client, or REST."
+description: "Work with a Crevio business: products, checkouts, orders, contacts, email, sites, socials, ads and the rest of the API, through the Crevio MCP server (delegate to the Crevio agent or run scripts), the @crevio/sdk TypeScript client, or REST."
 ---
 
 # Crevio API
 
-Crevio is an AI platform that runs a small business: products and prices, checkouts, orders, subscriptions, discounts, customers, bookings, email, websites, social media, ads, phone calls and texts, and more. Every resource belongs to one account (the business), and a credential only ever sees its own account.
+Crevio is an AI platform that runs a small business: products and prices, checkouts, orders, subscriptions, discounts, contacts, bookings, email, websites, social media, ads, phone calls and texts, and more. Every resource belongs to one account (the business), and a credential only ever sees its own account.
 
 This skill holds the rules to follow every time. Everything else is in Crevio's documentation; see [Finding the details](#finding-the-details).
 
@@ -40,7 +40,7 @@ On the MCP server, use a script for exact numbers, lookups and bulk changes (sec
 - A **product** is what is for sale. It can't go `active` until it has a **price variant**.
 - What the buyer gets is an **experience** (course, download, community, event, bookable session, link), linked to a price variant so buying it grants access.
 - A **checkout** or a shareable **checkout link** sells price variants; the order arrives through the `order.paid` webhook.
-- An **order** belongs to a **customer** (`lead`, `free` or `paid`).
+- An **order** belongs to a **contact**. A contact's `lifecycle` is `lead` or `customer`; Crevio moves a lead to customer when they first buy or get access, and it never moves back.
 - A **broadcast** is one email to many people, a **sequence** is an automated series, and **inboxes** hold one-to-one threads.
 
 ## Finding the details

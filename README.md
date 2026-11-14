@@ -5,7 +5,7 @@
 Crevio's official MCP server. Connect Claude, ChatGPT, Cursor, VS Code or any MCP client to your [Crevio](https://crevio.co) account and:
 
 - **Delegate work** to the Crevio agent, the AI that runs your small business: "refund the last order from jane@…", "write and schedule this week's posts". Long jobs run in the background as runs that you can follow, continue, and approve.
-- **Run scripts** against the whole Crevio API (products, customers, orders, and more) and the 3,000+ apps connected to your account, without an agent turn.
+- **Run scripts** against the whole Crevio API (products, contacts, orders, and more) and the 3,000+ apps connected to your account, without an agent turn.
 
 This repository holds the connection configs and listing metadata. The server is hosted by Crevio; there is nothing to install or run.
 
