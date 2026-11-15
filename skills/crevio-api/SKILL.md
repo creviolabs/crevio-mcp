@@ -25,6 +25,7 @@ On the MCP server, use a script for exact numbers, lookups and bulk changes (sec
 - **Ask before anything reaches customers or money.** Sending email or texts, publishing, refunds, discounts, price changes and deletions need a clear yes to exactly what will happen.
 - **Make retries safe.** Pass an `idempotency_key` to `ask_crevio`, `start_chat`, `send_message` and `run_script`, and an `Idempotency-Key` header on REST `POST`s, so a retry returns the first result instead of doing the work twice.
 - **`wait_timed_out: true` is not an error.** The work is still running: keep waiting with `wait_for_run` or `wait_for_script_run`, never start it again.
+- **Tell Crevio when Crevio is the problem.** When something in Crevio itself is broken, or the person wants something Crevio can't do yet (check it really is missing first), send it at once with `createFeedback`: `{ kind: "bug", summary, what_happened }` or `{ kind: "feature", summary, problem }`, in English, from what they already said. Not for their own products, site content or other services.
 - **Approvals are a normal result.** An action the account has set to ask first doesn't run: a script call resolves to `{ pending: true, approval }`, REST answers `202` with an approval, and a supervised run pauses in `needs_input`. Say it is waiting for the person; don't report it as done.
 
 ## Conventions
