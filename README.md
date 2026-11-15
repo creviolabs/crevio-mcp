@@ -96,7 +96,7 @@ Then ask your agent to call `whoami`. If it answers with your account, you're co
 | `list_chats`, `get_chat`, `list_messages` | Read chats and their transcripts |
 | `wait_for_run`, `get_run`, `list_runs`, `cancel_run` | Follow, list and stop agent runs |
 | `resolve_approvals` | Approve or deny actions a run is paused on |
-| `list_integrations`, `list_integration_tools` | See what a script can call: the Crevio API and every connected app |
+| `list_namespaces`, `search_tools` | See what a script can call and find the function for a job: the Crevio API, built-in tools and every connected app |
 | `run_script` | Run JavaScript against the Crevio API and your integrations |
 | `wait_for_script_run`, `get_script_run`, `cancel_script_run` | Follow and stop script runs |
 | `get_file_download_url` | Download files a run or script produced |

@@ -17,7 +17,7 @@ This skill holds the rules to follow every time. Everything else is in Crevio's 
 | Writing TypeScript | `@crevio/sdk` |
 | Anything else | REST at `https://api.crevio.co/v1` with `Authorization: Bearer <api_token>` |
 
-On the MCP server, use a script for exact numbers, lookups and bulk changes (seconds), and hand a job to the agent for writing, judgement or work across several apps (a minute or more). `list_integrations` and `list_integration_tools` (with `search`) show what a script can call; `tools.<namespace>.<function>(args)` makes a call, and the script's last expression is its result.
+On the MCP server, use a script for exact numbers, lookups and bulk changes (seconds), and hand a job to the agent for writing, judgement or work across several apps (a minute or more). `list_namespaces` shows what a script can call and `search_tools` finds the function for a job; `tools.<namespace>.<function>(args)` makes a call, and the script's last expression is its result.
 
 ## Rules for every job
 
@@ -48,5 +48,5 @@ On the MCP server, use a script for exact numbers, lookups and bulk changes (sec
 Look things up rather than guessing field names or behaviour:
 
 - **Documentation:** on the MCP server, `search_docs` searches Crevio's help center and developer guides, and `read_docs_page` reads a page. Elsewhere, `https://crevio.co/docs/developer` and its index at `https://crevio.co/docs/llms.txt`.
-- **Exact operations and fields:** the OpenAPI spec at `https://api.crevio.co/openapi.json`, or `list_integration_tools` on the MCP server.
+- **Exact operations and fields:** the OpenAPI spec at `https://api.crevio.co/openapi.json`, or `search_tools` on the MCP server.
 - **Support:** `support@crevio.co`.
