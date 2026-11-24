@@ -1,7 +1,7 @@
 {
   "name": "crevio",
   "description": "Delegate work to an AI agent that runs your small business (products, orders, customers, email, sites), or run scripts against the Crevio API and 3,000+ connected apps.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "icon": "./icon.png",
   "mcpServers": "./.mcp.json",
   "author": {
